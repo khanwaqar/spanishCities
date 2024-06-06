@@ -1,0 +1,16 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+get_zip_by_city:
+    path: /api/get-zip-by-city
+    controller: 'App\Controller\LocationController::getZipByCity'
+    methods: ['GET', 'POST']
+
+get_city_by_zip:
+    path: /api/get-city-by-zip
+    controller: 'App\Controller\LocationController::getCityByZip'
+    methods: ['GET', 'POST']
